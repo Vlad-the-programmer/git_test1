@@ -10,6 +10,7 @@ class Sort():
         self.list[x] = self.list[y]
         self.list[y] = temp
 
+
     def SortBubble(self):
         index_of_last_el = len(self.list) - 1
         while True:
@@ -22,6 +23,7 @@ class Sort():
 
     def show(self):
         return self.list
+
 
     def SortInsertion(self):
         indexing_length = range(1, len(self.list))
@@ -69,6 +71,9 @@ class Modified_Sort(Sort):
         self.sorting_from = int(sorting_from)
         self.sorting_to = int(sorting_to)
 
+    # def __str__(self):
+    #     self.list
+
     def SortBubble(self):
   
         while True:
@@ -77,7 +82,7 @@ class Modified_Sort(Sort):
                     if self.list[iter-1] > self.list[iter]:
                 
                         self._swap(
-                        iter-1,iter)
+                        iter-1, iter)
 
             # print(self.list)
             return self.list
@@ -90,7 +95,7 @@ class Modified_Sort(Sort):
 
             while self.list[i-1] > value_to_sort and i > 0:
                 
-                self._swap(i,i-1)
+                self._swap(i, i-1)
 
                 i -= 1
         return self.list
