@@ -1,5 +1,5 @@
-from Sort import Sort
-from Sort import Modified_Sort
+from git_test1.Project2.Sort import Sort
+from git_test1.Project2.Sort import Modified_Sort
 from tkinter import *
 
 root = Tk()
@@ -84,8 +84,5 @@ def ordinary_sorting():
 
 
 button4 = Button(root, text='Do ordinary sorting', command=ordinary_sorting).pack()
-
-
-
 
 root.mainloop()

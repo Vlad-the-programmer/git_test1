@@ -19,6 +19,7 @@ class Sort():
                     if self.list[iter] > self.list[iter + 1]:
                         self._swap(
                         iter,iter + 1)
+
             return self.list
 
     def show(self):
@@ -33,7 +34,7 @@ class Sort():
 
             while self.list[i-1] > value_to_sort and i > 0:
                 
-                self._swap(i,i-1)
+                self._swap(i, i-1)
                 i -= 1
         return self.list
 
@@ -54,7 +55,7 @@ class Sort():
                     min_value = j
 
             if min_value != i:
-                self._swap(min_value,i)
+                self._swap(min_value, i)
 
         return self.list
     
@@ -71,14 +72,12 @@ class Modified_Sort(Sort):
         self.sorting_from = int(sorting_from)
         self.sorting_to = int(sorting_to)
 
-    # def __str__(self):
-    #     self.list
 
     def SortBubble(self):
   
         while True:
-            for run in range(self.sorting_from, self.sorting_to):
-                for iter in range(self.sorting_to-1, run, -1):
+            for run in range(self.sorting_from, self.sorting_to+1):
+                for iter in range(self.sorting_to, run, -1):
                     if self.list[iter-1] > self.list[iter]:
                 
                         self._swap(
@@ -88,7 +87,7 @@ class Modified_Sort(Sort):
             return self.list
     
     def SortInsertion(self):
-        indexing_length = range(self.sorting_from, self.sorting_to)
+        indexing_length = range(self.sorting_from, self.sorting_to+1)
 
         for i in indexing_length:
             value_to_sort = self.list[i]
@@ -101,11 +100,11 @@ class Modified_Sort(Sort):
         return self.list
     
     def SortSelection(self):
-        indexing_length = range(self.sorting_from, self.sorting_to)
+        indexing_length = range(self.sorting_from, self.sorting_to+1)
 
         for i in indexing_length:
             min_value = i
-            for j in range(i+1, self.sorting_to):
+            for j in range(i+1, self.sorting_to+1):
                 if self.list[j] < self.list[min_value]:
                     min_value = j 
 
