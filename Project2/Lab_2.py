@@ -1,5 +1,5 @@
-from git_test1.Project2.Sort import Sort
-from git_test1.Project2.Sort import Modified_Sort
+from Sort import Sort
+from Sort import Modified_Sort
 from tkinter import *
 
 root = Tk()
