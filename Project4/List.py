@@ -1,11 +1,11 @@
 
 class Stack:
-    def __init__(self, arr):
-        self.arr = arr
+    def __init__(self):
+        self.arr = list()
 
-    def push(self,  el: int):
+    def push(self,  el):
         self.arr.insert(0, el)
-        return self.arr
+        # return self.arr
 
     def show(self):
         if len(self.arr) == 0:
@@ -15,10 +15,10 @@ class Stack:
 
     def pop_the_first_el(self):
         self.arr.pop(0)
-        return self.arr
+        # return self.arr
 
-    def exit(self):
-        exit()
+    # def __getitem__(self, item):
+    #     return self.arr
 
 
 class LinkedList(Stack):
