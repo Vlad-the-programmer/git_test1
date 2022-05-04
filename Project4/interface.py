@@ -87,7 +87,7 @@ def linkedList_input():
                     print(f"LinkedList= {linkedList.add_end()}")
 
                 elif methods == "6":
-                    el_after = int(input("Enter an element that is before the element: "))
+
                     print(f"LinkedList= {linkedList.del_mid()}")
                 elif methods == "7":
                     linkedList.search()
