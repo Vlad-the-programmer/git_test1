@@ -20,8 +20,8 @@ class Stack:
             print("The array is empty! ")
         return self.arr
 
-    # def __getitem__(self, item):
-    #     return self.arr
+    def __getitem__(self, item):
+        return self.arr[self.arr.index(item)]
 
 
 class LinkedList(Stack):
