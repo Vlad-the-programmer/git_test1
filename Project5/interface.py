@@ -33,4 +33,4 @@ elif choice == '5':
 #*+ab^+cdx
 #postfix
 # ab+cd+x^*
-
+#(a+b)*(c+d)^x -> infix

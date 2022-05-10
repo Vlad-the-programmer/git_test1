@@ -3,6 +3,9 @@ class Stack:
     def __init__(self, list):
         self.arr = list
 
+    def __str__(self):
+        return self.arr
+
     def push(self,  el):
         self.arr.insert(0, el)
         return self.arr
