@@ -55,7 +55,7 @@ def floydWarshall(graph):
 				if dist[i][i] < 0:
 					print('Negative-weight cycle found')
 					return
-		printSolution(dist)
+		#printSolution(dist)
 
 
 	printSolution(dist)
@@ -76,7 +76,6 @@ between every pair of vertices")
 				print()
 
 
-
 graph = [
 		[0, 1, 6, INF, INF, INF],
 		[INF, 0, 4, INF, -2, INF],
@@ -86,14 +85,6 @@ graph = [
 		[INF, INF, INF, INF, INF, 0],
 
 ]
-# graph1 = [
-# 		[0, 1, 1, 1, 1, 1],
-# 		[2, 0, 2, 2, 2, 2],
-# 		[3, 3, 0, 3, 3, 3],
-# 		[4, 4, 4, 0, 4, 4],
-# 		[5, 5, 5, 5,  0, 5],
-# 		[6, 6, 6, 6, 6, 0],
-# 		]
-#
-# # floydWarshall(graph)
+
+
 floydWarshall(graph)
